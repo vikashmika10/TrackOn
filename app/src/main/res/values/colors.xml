@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar">#F5F5F5</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#8B4513</color>
+    <color name="light_blue">#6495cc</color>
+    <color name="bg_btn_join">#1e6258</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="text_msg_input">#6495ED</color>
+
+    <color name="green">#1DBF97</color>
+    <color name="red">#FF4B4B</color>
+    <color name="blue">#6495ED</color>
+    <color name="yellow">#FF7F50</color>
+
+
+
+</resources>

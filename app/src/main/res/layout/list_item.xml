@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <com.maps.mapsplotter.RoundedLetterView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rlv_name_view"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        tools:visibility="visible"
+        app:backgroundColorValue="@color/green"
+        app:titleColor="@android:color/white"
+        app:titleSize="20dp"
+        app:titleText="A"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@+id/textView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tv_name_holder"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/text_msg_input"
+        android:layout_marginLeft="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/rlv_name_view" />
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/text_msg_input"
+        android:layout_below="@+id/tv_name_holder"
+        android:layout_alignLeft="@+id/tv_name_holder" />
+</RelativeLayout>
+

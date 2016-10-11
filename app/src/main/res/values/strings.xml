@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TrackOn-Real Time Gps Tracker</string>
+    <string name="title_activity_maps">TrackOn</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3947201996699849/4615432014</string>
+    <string name="GPSAlertDialogTitle">Location Service Setting</string>
+    <string name="GPSAlertDialogMessage">Location service is not enabled. Do you want to go to setting menu</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="title_activity_recycler">RecyclerActivity</string>
+</resources>

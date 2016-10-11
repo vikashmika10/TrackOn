@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+    defaultConfig {
+        applicationId "com.maps.mapsplotter"
+        minSdkVersion 11
+        targetSdkVersion 11
+        versionCode 16
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // compile 'com.google.api-client:google-api-client-android:1.17.0-rc'
+    // Support Library
+    compile 'com.android.support:recyclerview-v7:21.0.0'
+   compile 'com.google.android.gms:play-services:6.5.87'
+   compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.googlecode.android-query:android-query:0.25.9'
+    compile project(path: ':GCMBackend', configuration:'android-endpoints')}

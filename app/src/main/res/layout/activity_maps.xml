@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@color/text_msg_input">
+
+    <LinearLayout android:id="@+id/LinearLayout02" android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:textOn="Stop Sharing"
+            android:textOff="Start Sharing"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/startStop"
+            android:background="@color/text_msg_input"
+            android:checked="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Friend"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:background="@color/text_msg_input"
+            android:id="@+id/GetServerData"
+            android:layout_weight="1"
+            android:textColor="@color/white" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton"
+            android:textOn="Traffic"
+            android:layout_marginBottom="3dp"
+            android:textOff="Traffic"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:background="@color/text_msg_input"
+            android:id="@+id/toggleButton" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friend List"
+        android:gravity="center"
+        android:layout_marginBottom="3dp"
+        android:textSize="16dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:id="@+id/friendList"
+        android:background="@color/text_msg_input"/>
+
+    </LinearLayout>
+
+    <fragment
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map" tools:context=".MapsActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/LinearLayout02" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignBottom="@+id/map"
+        android:layout_alignParentRight="true">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
